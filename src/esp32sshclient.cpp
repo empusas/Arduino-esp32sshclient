@@ -304,7 +304,7 @@ int8_t ESP32SSHCLIENT::lets_handshake(void)
     }
     if(rc != 0)
     {
-        fprintf(stderr, "Failure establishing SSH session: %d\n", rc);
+        fprintf(stderr, "SSH host session handshake failed: %d\n", rc);
         system_reboot();
     }
     fprintf(stdout, "SSH host session handshake success.\n");
